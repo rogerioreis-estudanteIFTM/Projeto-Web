@@ -1,0 +1,221 @@
+body {
+    background-color: #0d8f84;
+    color: #c2b8b8;
+    font-family: times new roman, timesf;
+    margin: 0;
+    padding: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #0d168f;
+    padding: 50px;
+    /* border-radius: 50px; */
+}
+td {
+    text-align: center;
+}
+li a:hover {
+    background-color: #111111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+li a {
+    display: block;
+    color: #fdf9f9;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li a:hover {
+    background-color: #111111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+nav li a {
+    display: block;
+    color: #fdf9f9;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#contador-visitantes {
+    text-align: center; 
+    margin-top: 20px;
+    padding:10px;
+    font-family:Arial, sans-serif;
+    font-size:26px;
+    color:#ffffff;
+}
+/* PÁGINA DOS CURSOS */
+#cursos {
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+}
+.cursos {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+    list-style: none;
+}
+.cursos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #031cfa;
+    border-radius: 30px;
+}
+.cursos li:hover {
+    border-color: #04f5e1;
+}
+.cursos li:active {
+    border-color: #088c19;
+}
+.cursos li:hover h2 {
+    font-size: 34px;
+}
+.cursos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.cursos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.cursos p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+#descritivo-contato {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+        padding: 30px;
+}
+form input {
+    width: 80%;
+    max-width: 600px;
+}
+#formulario-contato {
+    color: #000000;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#botão-enviar {
+    background-color: #2702fa;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+#informacoes-contato {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+#mapa-contato {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+
+/* rodapé */
+footer {
+    display: clear;
+    background-color: #580505;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+footer p {
+    color: #c2b8b8;
+    font-size: 15px;
+    margin-top: 3px;
+    text-align: right;
+}
+.curso-imagem {
+	opacity: 0.3;
+	transition: 400ms;
+}
+.curso-imagem:hover {
+    opacity: 1;
+    transition: 400ms;
+}
+
+.titulo-portal {
+	box-shadow: 10px 10px 5px  #000000, -10px -10px yellow, -20px 20px 20px rgba(255,0,0,0.5);
+}
+/* ===================================
+CONFIGURAÇÕES RESPONSIVIDADE PARA CELULAR */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    table {
+        width: 100%;
+    }
+    nav ul {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav li {
+        width: 100%;
+    }
+    nav li a {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Cursos */
+    .cursos {
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .cursos li {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+}
